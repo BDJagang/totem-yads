@@ -26,7 +26,7 @@
 set -euo pipefail
 
 # Configuration
-RUNTIME="${RUNTIME:-podman}" # Could be docker or podman
+RUNTIME="${RUNTIME:-docker}" # Could be docker or podman
 IMG="${ZMK_IMAGE:-docker.io/zmkfirmware/zmk-build-arm:4.1-branch}"
 ENV="-e CMAKE_PREFIX_PATH=/zmk/zephyr:${CMAKE_PREFIX_PATH:-}"
 
